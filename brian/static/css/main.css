@@ -3,14 +3,13 @@
                 padding: 0;
                 margin: 0;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                background-color: rgb(26 161 157);
+                background-color:  rgb(26 161 157);
             }
             .firstSection{
                 height: 85vh;
                 width: 100%;
                 background-color: rgb(26 161 157);
                 position: absolute;
-                background-attachment: fixed;
                 color: #fff;
                 margin-top: 0%;
             }
@@ -69,7 +68,7 @@
                 margin-top: 81.85vh;
                 background-color: rgb(26 161 157);
                 background: linear-gradient( 90deg rgba(255,255,255,0.5));
-                height: 2600px;
+                height: 1200px;
             }
             .head{
                 padding-top: 10pt;
@@ -129,7 +128,7 @@
             }
             .about{
                 position: absolute;
-                top: calc(85vh + 2000px);
+                top: calc(85vh + 1200px);
                 width: 100%;
                 height: 100vh;
                 background-color: rgb(26 161 157);
@@ -245,12 +244,13 @@
     height: 100vh;
     width: 100%;
     position: absolute;
-    background-color: rgb(26 161 157);
-    top: calc(2557px + 100vh)
+    background-color:rgb(26 161 157);
+    top: calc(1757px + 100vh)
 }
 .contact{
     /*div containing the form*/
     display: flex;
+    padding-top: 20pt;
     align-items: center;
     justify-content: center;
     color: rgb(50, 54, 54);
