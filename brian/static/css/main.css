@@ -1,0 +1,303 @@
+
+            body{
+                padding: 0;
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: rgb(26 161 157);
+            }
+            .firstSection{
+                height: 85vh;
+                width: 100%;
+                background-color: rgb(26 161 157);
+                position: absolute;
+                background-attachment: fixed;
+                color: #fff;
+                margin-top: 0%;
+            }
+            .nav{
+                position: fixed;
+            }
+            .naval ul{
+                list-style: none;
+            }
+            .naval ul li{
+                display: inline-block;
+                
+            }
+            .naval a{
+                color: #fff;
+                padding: 5pt;
+            }
+            .naval button{
+                border: solid;
+                border-width: 1px;
+                border-color: #fff;
+                height: 20pt;
+                width: 50pt;
+                cursor: pointer;
+                color: #fff;
+                background-color: transparent;
+                -webkit-transition: ease-out 0.4s;
+                -moz-transition: ease-out 0.4s;
+                transition: ease-out 0.4s;
+            }
+            .naval button:hover{
+                box-shadow: inset 0 100px 0 0 #feffff;
+                border-color: rgb(26 161 157);
+                color: rgb(26 161 157);
+            }
+            .contentalign{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 30%;
+                position: relative;
+            }
+            #name{
+                font-size: 2.5em;
+                font-family: cursive;
+            }
+            #stack{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: cursive;
+            }
+            .portfolio{
+                width: 100%;
+                position: absolute;
+                margin-top: 81.85vh;
+                background-color: rgb(26 161 157);
+                background: linear-gradient( 90deg rgba(255,255,255,0.5));
+                height: 2600px;
+            }
+            .head{
+                padding-top: 10pt;
+                text-align: center;
+                color: #fff;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 2em;
+            }
+            .card{
+                position: relative;
+                padding-top: 20pt;
+                padding-bottom: 20pt;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            .cardContent{
+                height: 330px;
+                background-color: rgb(91, 90, 92);
+                width: 80%;
+                color: #fff;
+                display: flex;
+            }
+            .cardContent img{
+                height: 300px;
+                width: 500px;
+                padding-top: 10pt;
+                padding-left: 10pt;
+                padding-right: 10pt;
+            }
+            .cardContent ul{
+                list-style-type: none;
+            }
+            .cardContent ul li{
+                display: inline-block;
+            }
+            .desc{
+                padding: 20pt;
+            }
+            .desc h2{
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .desc a{
+                background-color: rgb(26 161 157);
+                color: #fff;
+                padding: 5pt;
+                text-decoration: none;
+                -webkit-transition: ease-out 0.4s;
+                -moz-transition: ease-out 0.4s;
+                transition: ease-out 0.4s;
+            }
+            .desc a:hover{
+                box-shadow: inset 0 100px 0 0 #feffff;
+                border-color: rgb(250, 250, 250);
+                color: rgb(26 161 157);
+            }
+            .about{
+                position: absolute;
+                top: calc(85vh + 2000px);
+                width: 100%;
+                height: 100vh;
+                background-color: rgb(26 161 157);
+                color: #feffff;
+            }
+            .about-top{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .drop img{
+                background-color: #feffff;
+                position: absolute;
+                width: 30pt;
+                height: 30pt;
+                top: 0.001pt;
+                color: rgb(26 161 157);
+            }
+            .toTop{
+                font-size: 10px;
+                position: relative;
+                top: 10pt;
+                right: 4pt;
+                color: #fff;
+            }
+            #topLink{
+                text-decoration: none;
+            }
+            .profilealign{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .profiler{
+                top: 100pt;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                -ms-flex-direction: column;
+                height: 300px;
+                width: 80%;
+                padding-left: 50pt;
+                padding-right: 50pt;
+            }
+            .container1{
+                background-color: rgba(255,255,255,0.15);
+                width: 60%;
+                height: 450px;
+            }
+            .container2{
+                background-color: rgba(255,255,255,0.15);
+                width: 40%;
+                height: 450px;
+            }
+            .stuff, .morestuff{
+                padding-top: 60pt;
+                padding-left: 30pt;
+                padding-right: 20pt;
+            }
+            .my-name{
+                font-size: 3em;
+                font-family: cursive;
+            }
+            .job{
+                font-size: 1em;
+                font-family: cursive;
+            }
+            #greeting{
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .describe-career{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                
+            }
+            #stackList{
+                text-decoration: underline;
+                font-size: 20px;
+                font-weight: 650;
+            }
+            .github{
+                position: absolute;
+                bottom: 60pt;
+                top: calc(250pt + 150pt);
+                padding-bottom: 15px;
+            }
+            .github button{
+                cursor: pointer;
+                height: 30pt;
+                width: 350pt;
+                border: solid;
+                border-width: 1px;
+                border-radius: 10px;
+                color: rgb(26 161 157);
+                font-size: 12pt;
+                -webkit-transition: ease-out 0.4s;
+                -moz-transition: ease-out 0.4s;
+                transition: ease-out 0.4s;
+            }
+            .github button:hover{
+                box-shadow: inset 0 100px 0 0 rgb(26 161 157);
+                border-color: #fff;
+                color: rgb(250, 250, 250);
+            }
+            .github a{
+                text-decoration: none;
+            }
+
+
+.contacts{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(26 161 157);
+    top: calc(2557px + 100vh)
+}
+.contact{
+    /*div containing the form*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(50, 54, 54);
+}
+#firstname, #email, #subject{
+    width: 40vw;
+    height: 25pt;
+    border: none;
+    border-radius: 5px;
+    user-select: auto;
+}
+#mess{
+    height: 200pt;
+    width: 50vw;
+    border: none;
+    border-radius: 5px;
+}
+#sender{
+    height: 25pt;
+    width: 100pt;
+    background-color: rgb(26 161 157);
+    color: #fff;
+    border: solid;
+    border-color: #fff;
+    border-width: 1px;
+    cursor: pointer;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+#sender:hover{
+box-shadow: inset 0 100px 0 0 #feffff;
+border-color: rgb(26 161 157);
+color: rgb(26 161 157);
+}
+.alert{
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    font-size: 1.5em;
+    text-align: center;
+    color: #feffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contact ::placeholder{
+    padding-left: 20px;
+}
+.contact label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

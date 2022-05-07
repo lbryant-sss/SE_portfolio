@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="python engineer, remote software engineer, django developer">
+        <meta name="description" property="og:description" content="this is a portfolio for a fullstack python software engineer in kenya">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>My Software Engineering Portfolio</title>
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+        <style>
+        </style>
+    </head>
+    <body>
+        <section class="firstSection" id="backToTop">
+            <div class="nav">
+                <div class="naval">
+                    <ul>
+                        <li>
+                            <a href="#portfolio">
+                                <button>
+                                    <span>Works</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about">
+                                <button>
+                                    <span>About</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                <button>
+                                    <span>Let&apos;s talk</span>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contentalign">
+                <div class="content">
+                    <span id="name">Hi&comma; Welcome to my portfolio.</span><br>
+                    <span id="stack">Fullstack Python Engineer</span>
+                </div>
+            </div>
+        </section><br>
+        <section class="portfolio" id="portfolio">
+            <div class="head">
+                <span>
+                    Below are some of my works
+                </span>
+            </div>
+            <div class="card">
+                <div class="cardContent">
+                    <div class="image">
+                        <img src="{% static 'images/personalblog.png' %}" alt="">
+                    </div>
+                    <div class="desc">
+                        <h2>My personal tech blog</h2>
+                        <p>
+                            This is a simple blogging page where I write some how to articles inspired by some of the challanges I faced when working on my projects.
+                            It is made on Python Django, SQLlite, HTML5 and CSS3. It is hosted on heroku.
+                        </p> 
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardContent">
+                    <div class="image">
+                        <img src="{% static 'images/portfolio.PNG' %}" alt="">
+                    </div>
+                    <div class="desc">
+                        <h2>This portfolio of course &semi;&minus;&rbrace;</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci pariatur unde similique consequuntur sapiente, ducimus sed, ad incidunt assumenda exercitationem minima quasi maxime illo rem aliquam expedita amet itaque!
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardContent">
+                    <div class="image">
+                        <img src="{% static 'images/digital_clock.PNG' %}" alt="">
+                    </div>
+                    <div class="desc">
+                        <h2>A python&apos;s pygame project</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci pariatur unde similique consequuntur sapiente, ducimus sed, ad incidunt assumenda exercitationem minima quasi maxime illo rem aliquam expedita amet itaque!
+                        </p>
+                        <a href="https://github.com/lbryant-sss/DigitalClock">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section><br>
+        <section class="about" id="about">
+            <!--<div class="about-top">
+                <div class="drop">
+                    <a href="#backToTop" id="topLink">
+                        <img src="#" alt=""><br>
+                        <span class="toTop">Back To Top</span>
+                    </a>
+                </div>
+            </div>-->
+            <div class="profilealign">
+                <div class="profiler">
+                    <div class="container1">
+                        <div class="stuff">
+                            <span id="greeting">Hi&comma; My name is&colon;</span><br>
+                            <span class="my-name">
+                                Brian Mungai
+                            </span><br>
+                            <span class="job">
+                                A Fullstack Python Engineer
+                            </span><br><br>
+                            <span class="describe-career">
+                                I am a software engineer currently based in Nairobi&comma; Kenya. I would introduce myself as a dreamer and a creator. I dream of working on applications that will impact people&apos;s lives. I am looking to grow professionally, in software engineering. Although I don&apos;t have formal working experience I have worked on my own projects, coded mostly in Python, a bit of C++ and Javascript.
+                                I have learnt a lot while working on these projects and I would like some new challanges in the industry.</span>
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="morestuff">
+                            <span id="stackList">Skills</span><br>
+                            <span>Python</span><br>
+                            <span>Django</span><br>
+                            <span>HTML5</span><br>
+                            <span>CSS3</span><br>
+                            <span>Javascript</span><br>
+                            <span>C++</span><br>
+                            <span>PostgreSQL</span><br>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="github">
+                    <a href="https://github.com/lbryant-sss?tab=repositories">
+                        <button>Find more projects on my github page</button>
+                    </a>
+                    <!--<a href="#">
+                        <button>Interractive Resume coming soon</button>
+                    </a>-->
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contact">
+            {% if firstname %}
+            <div class="alert">
+                <span>Thanks {{firstname}}, Your message has been recived succesfully.</span>
+                <br>
+                <a href="" id="alertLink" style="color: #fff;">Go back to the top</a>
+            </div><br>
+            {% else %}<br>
+            <div class="contact">
+                <form action="#contact" method="post">
+                    {% csrf_token %}
+                    <div class="Firstname">
+                        <label for="firstname">Please Enter your first name</label><br>
+                        <input type="text" name="fname" id="firstname" placeholder="Firstname"><br><br>
+                    </div>
+                    <div class="Email">
+                        <label for="email">Enter your Email Address</label><br>
+                        <input type="email" name="Email" id="email" placeholder="yours@example.com"><br><br>
+                    </div> 
+                    <div class="sub">
+                        <label for="sub">Message Subject</label><br>
+                        <input type="text" name="sub" id="subject" placeholder="Subject"><br><br>
+                    </div>
+                    <div class="mess">
+                        <label for="mess">Message</label><br>
+                        <input type="textarea" name="mess" id="mess" placeholder="Enter your message here"><br><br>
+                    </div>
+
+                    <div class="render">
+                        <button type="submit" id="sender">Send Message</button>
+                    </div>
+                </form>
+            </div>{% endif %}
+        </section>
+    </body>
+</html>
